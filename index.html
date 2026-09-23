@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyect Library</title>
+</head>
+
+<body>
+    <div class="app">
+        <h1>Create a Book</h1>
+        <button id="updateDetails">New Book</button>
+    </div>
+
+
+    <div class="books-grid">
+
+
+        
+    </div>
+
+    <dialog id="book-dialog">
+        <form class="book-form" method="dialog">
+            <section>
+                <label for="info-title">Title:</label>
+                <input type="text" name="title" id="info-title" required>
+
+                <label for="info-author">Author:</label>
+                <input type="text" name="author" id="info-author" required>
+
+                <label for="info-pages">Pages:</label>
+                <input type="number" name="pages" id="info-pages" required>
+
+                <label for="info-read">Read</label>
+                <select name="read" id="info-read">
+                    <option value="read">Read</option>
+                    <option value="no-read" selected>Unread</option>
+                </select>
+            </section>
+
+            <div>
+                <button id="cancel" type="reset">Cancel</button>
+                <button id="submit" type="submit">Add Book</button>
+            </div>
+        </form>
+    </dialog>
+
+</body>
+<script src="main.js"></script>
+
+</html>
